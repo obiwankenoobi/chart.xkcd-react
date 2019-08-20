@@ -7,7 +7,8 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "demo": "node scripts/demo.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "build-publish":"npm run build && npm publish"
   },
   "repository": {
     "type": "git",
