@@ -12,7 +12,7 @@ const Bar = ({ config }) => {
     })
 
     return (
-        <svg id="line" ref={ref}/>
+        <svg ref={ref}/>
     )
 }
 export default Bar;

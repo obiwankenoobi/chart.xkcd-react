@@ -12,7 +12,7 @@ const Line = ({ config }) => {
     })
 
     return (
-        <svg id="line" ref={ref}/>
+        <svg ref={ref}/>
     )
 }
 export default Line;
