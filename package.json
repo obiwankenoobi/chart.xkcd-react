@@ -8,7 +8,7 @@
     "build": "node scripts/build.js",
     "demo": "node scripts/demo.js",
     "test": "node scripts/test.js",
-    "build-publish":"npm run build && npm publish"
+    "build-publish": "npm run build && npm publish"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,10 @@
   "homepage": "https://github.com/obiwankenoobi/chart.xkcd-react#readme",
   "license": "MIT",
   "dependencies": {
-    "chart.xkcd": "^1.0.5"
+    
+  },
+  "peerDependencies": {
+    "chart.xkcd": "^1.0.7"
   },
   "devDependencies": {
     "@babel/core": "7.4.3",
