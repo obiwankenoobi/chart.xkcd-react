@@ -1,6 +1,6 @@
 # chart.xkcd-react
 ## React wrapper around [chart.xkcd](https://github.com/timqian/chart.xkcd)
-
+[![](https://raw.githubusercontent.com/timqian/images/master/20190819131226.gif)](https://timqian.com/chart.xkcd/)
 
 docs for configurations you can find in the official library [page](https://timqian.com/chart.xkcd/)
 
