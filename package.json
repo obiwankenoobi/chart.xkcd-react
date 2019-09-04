@@ -20,11 +20,9 @@
   },
   "homepage": "https://github.com/obiwankenoobi/chart.xkcd-react#readme",
   "license": "MIT",
-  "dependencies": {
-    
-  },
+  "dependencies": {},
   "peerDependencies": {
-    "chart.xkcd": "^1.0.7"
+    "chart.xkcd": "^1.1.2"
   },
   "devDependencies": {
     "@babel/core": "7.4.3",
