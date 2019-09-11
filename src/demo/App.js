@@ -4,6 +4,7 @@ import  Line  from '../lib/Line';
 import  Bar  from '../lib/Bar';
 import  Pie  from '../lib/Pie';
 import  XY  from '../lib/XY';
+import Radar from '../lib/Radar';
 
 const App = () => (
   <div>
@@ -84,6 +85,28 @@ const App = () => (
             timeFormat: undefined,
             dotSize: 1,
           },
+        }}
+      />
+      
+      <Radar 
+        config={{
+          title: 'Letters in random words', // optional
+          data: {
+            labels: ['c', 'h', 'a', 'r', 't'],
+            datasets: [{
+              label: 'ccharrrt', // optional
+              data: [2, 1, 1, 3, 1],
+            }, {
+              label: 'chhaart', // optional
+              data: [1, 2, 2, 1, 1],
+            }],
+          },
+          options: { // optional
+            showLegend: true,
+            dotSize: .8,
+            showLabels: true,
+            legendPosition: chartXkcd.config.positionType.upRight,
+          }
         }}
       />
     </div>
