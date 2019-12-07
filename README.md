@@ -5,7 +5,7 @@
 docs for configurations you can find in the official library [page](https://timqian.com/chart.xkcd/)
 
 ## Dependencies
-`chart.xkcd@^1.0.7` must be installed to use this library
+`chart.xkcd@^1.1.12` must be installed to use this library
 
 ## Quick Start
 
@@ -22,7 +22,7 @@ import { Line, Bar, Pie, XY } from "chart.xkcd-react"
 const App = () => (
   <div>
     <div>
-      <Line 
+      <Line
         config={{
           title: 'Monthly income of an indie developer', // optional
           xLabel: 'Month', // optional
@@ -76,7 +76,7 @@ const App = () => (
         }}
       />
 
-      <XY 
+      <XY
         config={{
           title: 'Pokemon farms', //optional
           xLabel: 'Coodinate', //optional

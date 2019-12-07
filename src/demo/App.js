@@ -2,6 +2,7 @@ import React from 'react';
 import chartXkcd from 'chart.xkcd';
 import  Line  from '../lib/Line';
 import  Bar  from '../lib/Bar';
+import  StackedBar  from '../lib/StackedBar';
 import  Pie  from '../lib/Pie';
 import  XY  from '../lib/XY';
 import Radar from '../lib/Radar';
@@ -9,7 +10,7 @@ import Radar from '../lib/Radar';
 const App = () => (
   <div>
     <div>
-      <Line 
+      <Line
         config={{
           title: 'Monthly income of an indie developer', // optional
           xLabel: 'Month', // optional
@@ -47,6 +48,27 @@ const App = () => (
         }}
       />
 
+      <StackedBar
+        config={{
+          title: 'Issues and PR Submissions',
+          xLabel: 'Month',
+          yLabel: 'Count',
+          data: {
+            labels: ['Jan', 'Feb', 'Mar', 'April', 'May'],
+            datasets: [{
+              label: 'Issues',
+              data: [12, 19, 11, 29, 17],
+            }, {
+              label: 'PRs',
+              data: [3, 5, 2, 4, 1],
+            }, {
+              label: 'Merges',
+              data: [2, 3, 0, 1, 1],
+            }],
+          },
+        }}
+      />
+
       <Pie
         config={{
           title: 'What Tim made of', // optional
@@ -63,7 +85,7 @@ const App = () => (
         }}
       />
 
-      <XY 
+      <XY
         config={{
           title: 'Pokemon farms', //optional
           xLabel: 'Coodinate', //optional
@@ -87,8 +109,8 @@ const App = () => (
           },
         }}
       />
-      
-      <Radar 
+
+      <Radar
         config={{
           title: 'Letters in random words', // optional
           data: {
